@@ -100,17 +100,9 @@ export function Books() {
             {
                 books.map(value => {
                     return (
-                        <Fragment>
-                            {editBook === value.id ? (
-                                <Editable
-                                    editFormData={editFormData}
-                                    handleEditFormChange={handleEditFormChange}
-                                    handleCancelClick={handleCancelClick}
-                                />
-                            ) : (
+
                                 <Book item={value} key={value.id}/>
-                            )}
-                        </Fragment>
+
                     )
                 })
             }

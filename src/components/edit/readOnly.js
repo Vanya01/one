@@ -1,7 +1,7 @@
 import React from 'react';
 
 export function ReadOnly({item,handleEditClick,handleDeleteClick}) {
-    console.log(item,`reafd only item `)
+    console.log(item,`read only item `)
 
 
 
@@ -11,8 +11,6 @@ export function ReadOnly({item,handleEditClick,handleDeleteClick}) {
             <p>{item.category}</p>
             <p>{item.authorName}</p>
             <p>{item.ISBN}</p>
-
-
             <button type={"button"} onClick={(event)=>  {
 
                 handleEditClick(event,item)
@@ -20,8 +18,6 @@ export function ReadOnly({item,handleEditClick,handleDeleteClick}) {
             <button type={"button"} onClick={()=>  {
                 handleDeleteClick(item.id)
             }}> Delete </button>
-
-
         </>
 
     )
