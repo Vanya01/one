@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+body {
+    font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hideform {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.showform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    position: absolute;
+    visibility: visible;
+    overflow: auto;
+    transition: 1s all;
+    z-index: 5;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+    position: relative;
+    z-index: 3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: white;
+    padding: 50px;
+    opacity: 1;
+    position: relative;
+}
+
+input {
+    margin: 20px 0;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 0 0 30px;
+    background-color: mintcream;
+    border: none;
+}
+
+.form-button {
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 0 50px;
+    height: 40px;
+    border-radius: 10px;
+}
+.form-button:hover{
+    color: black;
+    background-color: white;
+    border: none;
+    margin: 0 50px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 700ms;
+
+}
+
+
+.books {
+    display: flex;
+    justify-content: space-between;
+}
+
+.books p {
+    width: 50px;
+}
+
+.booksQuotes {
+    padding: 100px 0 0 0;
+    font-size: 20px;
+    color: silver;
+    text-transform: uppercase;
+}
+
+.booksValue {
+    background-color: silver;
+    margin: 15px 0;
+    border-radius: 10px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.showButton {
+    position: absolute;
+    right: 15%;
+    top: 40px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+}
+
+.showButton:hover {
+    position: absolute;
+    right: 15%;
+    top: 40px;
+    padding: 18px 28px;
+    border-radius: 10px;
+    color: blue;
+    background-color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 700ms;
+}
+
+.close-popup {
+    position: absolute;
+    bottom: 90%;
+    left: 70%;
+    background-color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.book_delete {
+    position: absolute;
+    right: -95px;
+    top: 50%;
+    padding: 5px 15px;
+    border: 0;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: black;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+
+.book_delete:hover {
+    background-color: red;
+    transition: 0.7s all;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.book_edit{
+    position: absolute;
+    right: -95px;
+    padding: 3px 25px;
+    border: 0;
+    transition: 0.5s all;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: green;
+    text-transform: uppercase;
+
+}
+.book_edit:hover{
+    background-color: red;
+    transition: 0.7s all;
+    padding: 3px 20px;
+    cursor: pointer;
 }

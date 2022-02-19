@@ -1,0 +1,39 @@
+{
+  "books": [
+    {
+      "bookTitle": "Book",
+      "authorName": "franko",
+      "category": "12345",
+      "ISBN": "undefined",
+      "id": 6
+    },
+    {
+      "bookTitle": "Ludy",
+      "authorName": "Mikeon",
+      "category": "roman",
+      "ISBN": "23455",
+      "id": 7
+    },
+    {
+      "bookTitle": "Book",
+      "authorName": "Kotlyarevskiy",
+      "category": "romane",
+      "ISBN": "123",
+      "id": 8
+    },
+    {
+      "bookTitle": "Book",
+      "authorName": "Kotlyarevskiy",
+      "category": "Poetry",
+      "ISBN": "123",
+      "id": 9
+    },
+    {
+      "bookTitle": "монтаж",
+      "authorName": "Vanya Voloshyn",
+      "category": "Vanya Voloshyn",
+      "ISBN": "12445",
+      "id": 10
+    }
+  ]
+}
